@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wirestone</title>
+<meta name="description" content="Sketch, paint and wireframe on an Android tablet, then turn your screens into real web pages.">
+<meta property="og:title" content="Wirestone">
+<meta property="og:description" content="Sketch, paint and wireframe on an Android tablet, then turn your screens into real web pages.">
+<meta property="og:image" content="screenshots/2-wireframe.png">
+<style>
+  :root {
+    --bg: #141417; --surface: #1c1c21; --surface-hi: #2c2c33; --line: rgba(255,255,255,.09);
+    --text: #ededf0; --muted: #9a9aa3; --accent: #7aa7ff; --signal: #ff8a3d;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 28px 0; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 20px; letter-spacing: -.01em; }
+  .mark { width: 36px; height: 36px; }
+
+  .hero { padding: 56px 0 40px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
+  .hero h1 { font-size: clamp(36px, 5.4vw, 62px); line-height: 1.04; letter-spacing: -.03em; margin: 0 0 20px; }
+  .hero h1 em { font-style: normal; color: var(--accent); }
+  .hero p { color: var(--muted); font-size: 19px; max-width: 34em; margin: 0 0 28px; }
+  .badge { display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font-size: 15px; }
+  .badge::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--signal); }
+  .hero-shot { justify-self: center; width: min(100%, 360px); }
+
+  .device { border-radius: 26px; padding: 10px; background: #0d0d10; border: 1px solid var(--line); box-shadow: 0 30px 80px rgba(0,0,0,.45); }
+  .device img { display: block; width: 100%; height: auto; border-radius: 18px; }
+
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  section h2 { font-size: clamp(26px, 3.4vw, 38px); letter-spacing: -.02em; line-height: 1.15; margin: 0 0 12px; }
+  .lede { color: var(--muted); max-width: 40em; margin: 0 0 36px; }
+
+  .flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .flow figure { margin: 0; }
+  .flow figcaption { color: var(--muted); font-size: 15px; margin-top: 12px; }
+  .flow figcaption b { color: var(--text); display: block; font-weight: 600; }
+  .step { display: inline-block; color: var(--signal); font-weight: 700; font-size: 13px; letter-spacing: .08em; margin-bottom: 4px; }
+
+  .pair { display: grid; grid-template-columns: 1fr 1.6fr; gap: 24px; align-items: start; }
+
+  .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .feature { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+  .feature h3 { margin: 0 0 6px; font-size: 17px; }
+  .feature p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  footer { padding: 40px 0 56px; color: var(--muted); font-size: 15px; border-top: 1px solid var(--line); }
+
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; padding-top: 24px; }
+    .flow { grid-template-columns: repeat(2, 1fr); }
+    .pair { grid-template-columns: 1fr; }
+    .features { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .wrap { padding: 0 16px; }
+    .flow, .features { grid-template-columns: 1fr; }
+    .hero p { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 108 108" aria-hidden="true">
+        <rect width="108" height="108" rx="24" fill="#1C1C21"/>
+        <path d="M37,40 C44,32 63,31 72,38 C80,44 79,60 72,67 C64,75 45,76 37,69 C30,63 30,47 37,40 Z" fill="none" stroke="#EDEDF0" stroke-width="3.2" stroke-linejoin="round"/>
+        <path d="M30,72 C44,62 58,50 78,36" fill="none" stroke="#7AA7FF" stroke-width="4.2" stroke-linecap="round"/>
+        <circle cx="78" cy="36" r="3.2" fill="#FF8A3D"/>
+      </svg>
+      Wirestone
+    </div>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Sketch it on a tablet. <em>Ship it as a web page.</em></h1>
+      <p>Wirestone is a drawing app for Android tablets and the S Pen. Sketch, paint, design vector shapes and build app wireframes in one place, then export your screens as real HTML.</p>
+      <span class="badge">Coming soon to Google Play</span>
+    </div>
+    <div class="hero-shot device"><img src="screenshots/2-wireframe.png" alt="A phone wireframe in Wirestone: nav bar, image, heading, paragraph, email field, checkbox, button and bottom navigation" width="1440" height="2304"></div>
+  </div>
+
+  <section>
+    <h2>From wireframe to web page</h2>
+    <p class="lede">Pick a phone, tablet or desktop screen and build it from ready-made blocks. Drag them, resize them, edit their text. One tap exports a responsive HTML page that matches what you drew.</p>
+    <div class="flow">
+      <figure><div class="device"><img src="screenshots/1-component-library.png" alt="Component library with nav bars, buttons, fields, media and layout blocks" loading="lazy" width="1440" height="2304"></div>
+        <figcaption><span class="step">STEP 1</span><b>Pick blocks</b>18 components, grouped by purpose.</figcaption></figure>
+      <figure><div class="device"><img src="screenshots/2-wireframe.png" alt="Blocks stacked into a sign-up screen" loading="lazy" width="1440" height="2304"></div>
+        <figcaption><span class="step">STEP 2</span><b>Build the screen</b>New blocks stack down the page.</figcaption></figure>
+      <figure><div class="device"><img src="screenshots/3-editing-a-component.png" alt="A selected button with resize handles and an edit bar" loading="lazy" width="1440" height="2304"></div>
+        <figcaption><span class="step">STEP 3</span><b>Tweak it</b>Drag, resize, edit text, snap to grid.</figcaption></figure>
+      <figure><div class="device"><img src="screenshots/4-exported-html-in-chrome.png" alt="The exported page open in Chrome" loading="lazy" width="1440" height="2074"></div>
+        <figcaption><span class="step">STEP 4</span><b>Export HTML</b>Real buttons, inputs and navigation.</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Draw like a designer</h2>
+    <p class="lede">Vector strokes stay sharp at any zoom and stay editable. Raster pages paint pixels like real paper. The Pen tool gives you Bézier curves you can reshape point by point.</p>
+    <div class="pair">
+      <div class="device"><img src="screenshots/5-pen-tool.png" alt="Pen tool drawing a curved path with handles" loading="lazy" width="1440" height="2304"></div>
+      <div class="device"><img src="screenshots/6-raster-a4-page.png" alt="A portrait A4 raster page with pen strokes" loading="lazy" width="2304" height="1440"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Everything in reach</h2>
+    <p class="lede">Built around the S Pen, with your tools on a wheel that follows your hand.</p>
+    <div class="features">
+      <div class="feature"><h3>41 brushes</h3><p>Inking, painting, airbrush, texture, plus blur and smudge brushes.</p></div>
+      <div class="feature"><h3>Tool wheel</h3><p>Spin it to your favourite brushes; eraser, undo and redo under your thumb.</p></div>
+      <div class="feature"><h3>SnapShape</h3><p>Hold the pen at the end of a stroke and circles, rectangles and stars snap clean.</p></div>
+      <div class="feature"><h3>Colour that fits</h3><p>Harmonies, 14 subject libraries from skin tones to sunsets, and saved colours.</p></div>
+      <div class="feature"><h3>Layers and precision</h3><p>Opacity, blend modes, fill bucket, guides, rulers and measuring.</p></div>
+      <div class="feature"><h3>Any page size</h3><p>Screen, Full HD, 4K, A4, A5, Instagram or custom, with autosave and a gallery.</p></div>
+    </div>
+  </section>
+
+  <footer>Wirestone · Made for the Samsung Galaxy Tab S10 FE and S Pen · Android 10 and up</footer>
+</div>
+</body>
+</html>
