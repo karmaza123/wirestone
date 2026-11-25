@@ -16,7 +16,7 @@ Pick a phone, tablet or desktop screen and build it from ready-made blocks: nav 
 
 ## Draw like a designer
 
-| Pen tool with BÃ©zier handles | Raster painting on an A4 page |
+| Pen tool with Bézier handles | Raster painting on an A4 page |
 |---|---|
 | ![Pen tool](screenshots/5-pen-tool.png) | ![Raster A4 page](screenshots/6-raster-a4-page.png) |
 
@@ -26,8 +26,8 @@ Pick a phone, tablet or desktop screen and build it from ready-made blocks: nav 
 - **41 brushes**, including inking, painting, airbrush, texture, and blur and smudge brushes.
 - **A spinning tool wheel** that keeps your favourite brushes, the eraser, undo and redo under your hand.
 - **SnapShape:** hold the pen at the end of a stroke and circles, rectangles, triangles and stars snap clean.
-- **Pen tool** with BÃ©zier curves you can reshape point by point.
-- **Colour harmonies, 14 colour libraries** (skin tones, foliage, sunsets, UI coloursâ€¦) and saved colours.
+- **Pen tool** with Bézier curves you can reshape point by point.
+- **Colour harmonies, 14 colour libraries** (skin tones, foliage, sunsets, UI colours…) and saved colours.
 - **Layers** with opacity and blend modes, fill bucket, guides, rulers and measuring.
 - **Page sizes** for screens, Full HD, 4K, A4, A5, Instagram, or any custom size.
 - **Autosave** and a gallery of all your drawings.
