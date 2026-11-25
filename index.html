@@ -51,6 +51,13 @@
   .feature h3 { margin: 0 0 6px; font-size: 17px; }
   .feature p { margin: 0; color: var(--muted); font-size: 15px; }
 
+  .dl-btn { display: inline-block; padding: 16px 28px; border-radius: 14px; background: var(--accent); color: #0e1320; font-weight: 700; font-size: 18px; text-decoration: none; }
+  .dl-btn:hover { filter: brightness(1.08); }
+  .dl-btn:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+  .steps { color: var(--muted); margin: 28px 0 0; padding-left: 22px; }
+  .steps b { color: var(--text); }
+  .note { color: var(--muted); font-size: 15px; margin: 20px 0 0; max-width: 40em; }
+
   footer { padding: 40px 0 56px; color: var(--muted); font-size: 15px; border-top: 1px solid var(--line); }
 
   @media (max-width: 900px) {
@@ -124,6 +131,18 @@
       <div class="feature"><h3>Layers and precision</h3><p>Opacity, blend modes, fill bucket, guides, rulers and measuring.</p></div>
       <div class="feature"><h3>Any page size</h3><p>Screen, Full HD, 4K, A4, A5, Instagram or custom, with autosave and a gallery.</p></div>
     </div>
+  </section>
+
+  <section class="download" id="download">
+    <h2>Try the alpha</h2>
+    <p class="lede">Wirestone 0.9 alpha for Android tablets (Android 10 or newer). Best with a pen, like the Galaxy Tab S10 FE and S Pen.</p>
+    <a class="dl-btn" href="download/Wirestone-0.9-alpha.apk" download>Download APK · 2.6 MB</a>
+    <ol class="steps">
+      <li>Open the downloaded file on your tablet.</li>
+      <li>If Android asks, allow installing apps from your browser.</li>
+      <li>Tap <b>Install</b>, then open Wirestone.</li>
+    </ol>
+    <p class="note">This is an early test version: things may change or break. If it crashes, open Settings in the app and tap “Send crash report”.</p>
   </section>
 
   <footer>Wirestone · Made for the Samsung Galaxy Tab S10 FE and S Pen · Android 10 and up</footer>
